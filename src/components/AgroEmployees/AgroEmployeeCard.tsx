@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react"
+import { NavLink } from "react-router-dom"
 import '../../styles/AgroEmployees/AgroEmployeeCard.scss'
 import { AgroEmployeeCardProps } from "../../types/interfaces"
 
@@ -13,10 +14,10 @@ export const AgroEmployeeCard = (props: AgroEmployeeCardProps) => {
     <article className="cardWrapper">
       <Icon icon="heroicons-solid:user-circle" style={{'color':colorRandomizer()}}/>
       <h3>{employee.employee_name}</h3>
-      <a href={`/employees/${employee.id}`} className="seeMore">
+      <NavLink to={`/employees/${employee.id}`} className="seeMore">
         <p>Ver Más</p>
         <Icon icon="heroicons-solid:arrow-right" />
-      </a>
+      </NavLink>
     </article>
   )
 }
