@@ -2,14 +2,14 @@
   El proyecto está corriendo en: https://dieguerson.github.io/agrology/
 
 # Creación e Inicio del Proyecto
-  npx create-react-app agrology --template typescript
+  `npx create-react-app agrology --template typescript`
 
 # Como hacerlo correr
-  npm start
+  `npm start`
 
 # Build y Deploy
- - npm run predeploy
- - npm run deploy
+ - `npm run predeploy`
+ - `npm run deploy`
 
 # Agregados
  - react-router-DOM para hacer el routing
