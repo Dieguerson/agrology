@@ -1,0 +1,119 @@
+.dataSkeletonWrapper {
+  width: 240px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px #00000033;
+  padding: 16px 24px;
+  box-sizing: border-box;
+  margin: 16px 8px;
+  justify-items: flex-start;
+  color: #C8C8C8;
+  animation: loading 1.5s ease infinite;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+    'presentation'
+    'personal'
+    'working';
+
+    .presentation {
+      grid-area: presentation;
+      text-align: center;
+      margin: auto;
+  
+      :first-child {
+        height: 100px;
+        width: 100px;
+      }
+  
+      h2 {
+        margin: 0 0 8px;
+      }
+    }
+  
+    .personal {
+      grid-area: personal;
+      border-bottom: 2px solid #C8C8C8;
+  
+      h3 {
+        margin: 0 0 16px
+      }
+  
+      p {
+        margin: 8px 0;
+      }
+  
+      :last-child {
+        margin-bottom: 16px;
+      }
+    }
+  
+    .working {
+      grid-area: working;
+      
+      h3 {
+        margin: 16px 0 16px
+      }
+  
+      p {
+        margin: 8px 0;
+      }
+    }
+}
+
+.loadingError{
+    width: 300px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px #00000033;
+    padding: 16px 24px;
+    box-sizing: border-box;
+    margin: 16px 8px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    
+    h2 {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    p {
+      margin: 8px 0 0
+    }
+}
+
+@media (min-width:680px) {
+  .dataSkeletonWrapper {
+    width: 385px;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+      'presentation personal'
+      'presentation working';
+  
+    .presentation{
+      grid-area: presentation;
+      margin: 0 32px 0 0;
+    }
+  }
+
+  .loadingError {
+    width: 385px;
+  }
+}
+
+  
+@keyframes loading {
+  0% {background: linear-gradient(135deg, #FFFFFFE6 0%, #C8C8C8E6 0%)};
+  13% {background: linear-gradient(135deg, #FFFFFFE6 0%, #C8C8C8E6 25%)};
+  25% {background: linear-gradient(135deg, #FFFFFFE6 0%, #C8C8C8E6 50%)};
+  38% {background: linear-gradient(135deg, #FFFFFFE6 0%, #C8C8C8E6 100%)};
+  50% {background: linear-gradient(135deg, #FFFFFFE6 25%, #C8C8C8E6 125%)};
+  63% {background: linear-gradient(135deg, #FFFFFFE6 50%, #C8C8C8E6 150%)};
+  75% {background: linear-gradient(135deg, #FFFFFFE6 75%, #C8C8C8E6 175%)};
+  100% {background: linear-gradient(135deg, #FFFFFFE6 100%, #C8C8C8E6 200%)};
+}

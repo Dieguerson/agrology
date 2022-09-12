@@ -1,0 +1,75 @@
+.employeeWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+    'presentation'
+    'personal'
+    'working';
+  max-width: fit-content;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 2px #00000033;
+  padding: 16px 24px;
+  box-sizing: border-box;
+  justify-items: flex-start;
+
+  .presentation{
+    grid-area: presentation;
+    text-align: center;
+    margin: auto;
+
+    :nth-child(2) {
+      height: 100px;
+      width: 100px;
+    }
+
+    h2 {
+      margin: 0 0 8px;
+    }
+  }
+
+  .personal {
+    grid-area: personal;
+    border-bottom: 2px solid #696969;
+
+    h3 {
+      margin: 0 0 16px
+    }
+
+    p {
+      margin: 8px 0;
+    }
+
+    :last-child {
+      margin-bottom: 16px;
+    }
+  }
+
+  .working {
+    grid-area: working;
+    
+    h3 {
+      margin: 16px 0 16px
+    }
+
+    p {
+      margin: 8px 0;
+    }
+  }
+}
+
+@media (min-width:680px) {
+  .employeeWrapper {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+      'presentation personal'
+      'presentation working';
+  
+    .presentation{
+      grid-area: presentation;
+      margin: 0 32px 0 0;
+    }
+  }
+}

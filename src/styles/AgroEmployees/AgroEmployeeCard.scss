@@ -1,0 +1,50 @@
+.cardWrapper {
+  width: 250px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 2px #00000033;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px 24px;
+  box-sizing: border-box;
+  margin: 16px 8px;
+  align-items: flex-start;
+  color: #696969;
+
+  :nth-child(1) {
+    width: 48px;
+    height: auto;
+    margin-right: 16px;
+  }
+
+  h3 {
+    margin: 8px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000
+  }
+
+  .seeMore {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 16px;
+    text-decoration: none;
+
+    &:visited {
+      color: inherit;
+    }
+
+    p {
+      margin: 0;
+      width: fit-content;
+    }
+
+    :nth-child(2) {
+      transform: rotate(-45deg);
+      width: 20px;
+      height: auto;
+    }
+  }
+}
