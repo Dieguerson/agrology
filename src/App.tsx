@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Main } from './layouts/Main'
 import { Employee } from "./pages/Employee";
 import { Employees } from "./pages/Employees";
@@ -11,6 +11,7 @@ function App() {
     <AgroProvider>
       <BrowserRouter>
         <Routes>
+          <Route path='/' element={<Navigate to='/agrology' replace />} />
           <Route path="/" element={<Main />}>
             <Route index element={<Home />}/>
             <Route path="employees" element={<Employees />}/>
