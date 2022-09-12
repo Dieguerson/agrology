@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/agrology/static/css/main.5ffb514c.css",
-    "main.js": "/agrology/static/js/main.a947ef7b.js",
+    "main.js": "/agrology/static/js/main.f2c5729e.js",
     "static/media/field.jpg": "/agrology/static/media/field.5f143dccb4dd36cc1348.jpg",
     "static/media/agrologyBig.png": "/agrology/static/media/agrologyBig.c6e46bd8bbc2a95eb039.png",
     "index.html": "/agrology/index.html",
     "main.5ffb514c.css.map": "/agrology/static/css/main.5ffb514c.css.map",
-    "main.a947ef7b.js.map": "/agrology/static/js/main.a947ef7b.js.map"
+    "main.f2c5729e.js.map": "/agrology/static/js/main.f2c5729e.js.map"
   },
   "entrypoints": [
     "static/css/main.5ffb514c.css",
-    "static/js/main.a947ef7b.js"
+    "static/js/main.f2c5729e.js"
   ]
 }
