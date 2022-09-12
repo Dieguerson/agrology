@@ -24,7 +24,7 @@ export const AgroMenu = (props: AgroMenuProps) => {
       <nav className={`menuWrapper ${open ? '' : 'hidden'} ${hidden}`}>
         <ul className='menu'>
           <li>
-            <NavLink to='/' className={({isActive}) => `menuItem ${isActive && 'menuItem-active'}`} onClick={clickHandler}>
+            <NavLink to='/agrology' className={({isActive}) => `menuItem ${isActive && 'menuItem-active'}`} onClick={clickHandler}>
               <Icon icon="heroicons-solid:home" />
               <p>Inicio</p>
               <Icon icon="heroicons-solid:chevron-right" />

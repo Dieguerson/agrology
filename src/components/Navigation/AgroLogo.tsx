@@ -5,7 +5,7 @@ export const AgroLogo = (props: LogoProps) => {
   const { className = '' } = props
 
   return (
-    <Link to='/' >
+    <Link to='/agrology' >
       <img src={require("../../assets/agrology.png")} alt="Agrology" className={className} />
     </Link>
   )

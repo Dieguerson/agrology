@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Navigate to='/agrology' replace />} />
           <Route path="/" element={<Main />}>
-            <Route index element={<Home />}/>
+            <Route path="agrology" element={<Home />}/>
             <Route path="employees" element={<Employees />}/>
             <Route path="employees/:id" element={<Employee />}/>
           </Route>

@@ -20,7 +20,7 @@ export const AgroHeader = (props: AgroHeaderProps) => {
               <Icon className='menuIcon' icon="heroicons-solid:menu-alt-1" />
               <Icon className={`arrowIcon ${menuState ? 'rotate' : ''}`} icon="heroicons-solid:chevron-right" />
             </div>
-            <NavLink to='/' className='homeLink'>Inicio</NavLink>
+            <NavLink to='/agrology' className='homeLink'>Inicio</NavLink>
           </section>
           <AgroLogo className='agroLogo' />
           <section className='userSection'>
