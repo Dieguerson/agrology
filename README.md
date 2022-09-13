@@ -3,7 +3,7 @@
 # Creación e Inicio del Proyecto
 `npx create-react-app agrology --template typescript`
 
-# Como hacerlo correr
+# Cómo hacerlo correr
 - `git clone https://github.com/Dieguerson/agrology.git`
 - `npm i`
 - `npm start`
