@@ -5,7 +5,8 @@
   `npx create-react-app agrology --template typescript`
 
 # Como hacerlo correr
-  `npm start`
+  - `npm i` la primera vez
+  - `npm start`
 
 # Build y Deploy
  - `npm run predeploy`

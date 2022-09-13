@@ -1,66 +1,29 @@
-.skeletonWrapper {
-  width: 250px;
-  border-radius: 4px;
-  box-shadow: 2px 2px 2px #00000033;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 16px 24px;
-  box-sizing: border-box;
-  margin: 16px 8px;
-  align-items: flex-start;
-  color: #696969;
+.cardLoader {
   animation: loading 1.5s ease infinite;
 
   :first-child {
-    width: 48px;
-    height: auto;
-    margin-right: 16px;
     color: #C8C8C8;
-  }
-
-  .skeletonText {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-top: 16px;
-
-    p {
-      margin: 0;
-      width: fit-content;
-    }
-
-    :nth-child(2) {
-      transform: rotate(-45deg);
-      width: 20px;
-      height: auto;
-    }
   }
 }
 
 .loadingErrorEmployees{
-    width: 250px;
-    border-radius: 4px;
-    box-shadow: 2px 2px 2px #00000033;
-    padding: 16px 24px;
-    box-sizing: border-box;
-    margin: 16px 8px;
-    justify-content: center;
-    align-items: center;
-    background-color: #FF0000;
-    color: #FFFFFF;
-    display: flex;
-    flex-flow: column nowrap;
-    text-align: center;
-    
-    h2 {
-      font-size: 20px;
-      margin: 0;
-    }
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF0000;
+  color: #FFFFFF;
+  flex-flow: column nowrap;
+  text-align: center;
 
-    p {
-      margin: 8px 0 0
-    }
+  :nth-child(1) {
+    width: unset;
+    margin: unset;
+    font-size: 20px;
+  }
+
+  p {
+    margin: 8px 0 0
+  }
 }
 
 @keyframes loading {

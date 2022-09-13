@@ -1,5 +1,6 @@
-import { useEffect, useContext } from 'react'
+import { useContext } from 'react'
 import { Icon } from "@iconify/react"
+import '../../styles/AgroEmployees/AgroEmployeeData.scss'
 import '../../styles/LoadingSkeletons/EmployeeDataSkeleton.scss'
 import { AgroContext } from '../../context/AgroContext'
 import { AgroContextInterface } from '../../types/interfaces'
@@ -7,21 +8,17 @@ import { AgroContextInterface } from '../../types/interfaces'
 export const EmployeeDataSkeleton = () => {
   const { errors } = useContext(AgroContext) as AgroContextInterface
 
-  useEffect(() => {
-    console.log(errors)
-  }, [errors])
-
   return (
     <>
       {
         errors 
           ?
-            <article className='loadingError'>
+            <article className='employeeWrapper loadingError'>
               <h2>Hubo un problema en la carga de datos.</h2>
               <p>Espere un momento y recargue la página.</p>
             </article>
           :
-            <article className="dataSkeletonWrapper">
+            <article className="employeeWrapper loader">
               <section className="presentation">
                 <Icon icon="heroicons-solid:user-circle" />
               </section>
